@@ -30,7 +30,20 @@ Understanding how to specify log sources and directories to monitor (e.g., Snort
 - Development of critical thinking and problem-solving skills in cybersecurity.
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
+- Splunk Universal Forwarder:
+  - A lightweight tool used to forward logs and data from a machine (Ubuntu VM in this case) to a Splunk Enterprise server for centralized log management and analysis.
+- Splunk Enterprise:
+  - A Security Information and Event Management (SIEM) system used for log aggregation, indexing, searching, and visualizing data. It receives and processes the alerts and logs forwarded by the Universal Forwarder.
+-Snort:
+  - An open-source Intrusion Detection System (IDS) that monitors network traffic and generates alerts based on predefined rules. These alerts are forwarded to Splunk for further analysis.
+- Ubuntu (Linux OS):
+  - The operating system running on the virtual machine, used to install and configure both Snort and the Splunk Universal Forwarder.
+- VirtualBox/VMware:
+   - Virtualization software used to run an Ubuntu virtual machine on a Windows host, allowing you to set up a sandbox environment for security monitoring.
+- Syslog:
+  - A logging protocol used to forward logs (e.g., Snort alerts) from the local machine (Ubuntu VM) to Splunk, often leveraged within the Universal Forwarder configuration.
+- Terminal (Command Line Interface):
+  - Used for installing, configuring, and managing Snort, Splunk Universal Forwarder, and Ubuntu services. Key in executing setup and monitoring commands.
 
 
 ## Steps
