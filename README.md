@@ -1,5 +1,5 @@
 ## Objective
-[Brief Objective - Remove this afterwards]
+
 
 The Detection Lab project aimed to establish a controlled environment for simulating and detecting malicious network packets . The primary focus was to monitor and analyze network traffic within snort tool and forwarded the alerts using Snort-Forwarder  to a  Security Information and Event Management (SIEM) system (Splunk Enterprise), generating test telemetry to mimic real-world network scenarios. This hands-on experience was designed to deepen understanding of network security, network traffic , and defensive strategies.
 
