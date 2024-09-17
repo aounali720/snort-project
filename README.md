@@ -45,7 +45,7 @@ The Detection Lab project aimed to establish a controlled environment for simula
 - Wireshark (Optional):A network protocol analyzer that can be used alongside Snort to visually inspect network traffic for verification and debugging purposes.
 
 
-## 1-Step
+## 1-Step Installing snort 
 The initial step is to intall snort in our virtual machine using the terminal the command is:<br>
        ```
         sudo apt-get install snort
@@ -53,13 +53,13 @@ The initial step is to intall snort in our virtual machine using the terminal th
 <br>During installation, you’ll be prompted to configure the network. Set your HOME_NET to the network you want to monitor.<br>
 As in our case we are going to keep it as is for sniffing any packet on the network
 <br>
-## 2-step
+## 2-step configuring snort 
 After the installion of snort is complete we can define the source ip and port , the destination port on which snort monitors but in our case we want it to mmonitor the whole network <br>
 For the configuration of source and destination ip of a network we can modify the snort.confi file <br>
 This file can be found in the
 **/etc/snort/snort.conf** 
 path<br>
-## 3-Step
+## 3-Step adding customs rules and testing
 For writing the rules on which bases the snort will alert us can be written found in the 
 <br> **/etc/snort/rules/local.rules**.<br>
 
@@ -100,11 +100,23 @@ T is for snort to run in test mode.<br>
 i is for the interface on which snort will monitor packet (Lan card) .<br>
 c is for the configuration file used<br>
 <br>
-## 4-STEP
+## 4-STEP Running snort
 In this step we are going to check if snort is working properly using the following command.<br>
 ``sudo snort -q -l /var/log/snort -i ens33 -A console -c /etc/snort/snort.conf ``
 
 *Ref 3: snort running*
 
 ![Ubuntu 64-bit-2024-09-16-02-24-54](https://github.com/user-attachments/assets/d5465914-56d3-4012-82ac-f4d459d4fe82)
+
+Using another virtual machine we tried to ping the ubuntu machine on which the snort was running .<br>
+And with another machine we tried to establish a connection to the ubuntu machine using ssh .<br>
+With this the alerts were generated and can be seen on the terminal.<br>
+In the above used command -l is used for loging the packets.<br>
+Logged packets are saved in the /var/log/snort also <br>
+*Ref 4: snort log file*
+![Ubuntu 64-bit-2024-09-17-23-49-03](https://github.com/user-attachments/assets/b07828f8-fac8-4e06-9427-d1fc56902dfe)
+
+
+
+
 
