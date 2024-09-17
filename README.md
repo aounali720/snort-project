@@ -45,11 +45,39 @@ The Detection Lab project aimed to establish a controlled environment for simula
 - Wireshark (Optional):A network protocol analyzer that can be used alongside Snort to visually inspect network traffic for verification and debugging purposes.
 
 
-## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
+## 1-Step
+The initial step is to intall snort in our virtual machine using the terminal the command is:<br>
+       ```
+        sudo apt-get install snort
+        ```
+<br>During installation, you’ll be prompted to configure the network. Set your HOME_NET to the network you want to monitor.<br>
+As in our case we are going to keep it as is for sniffing any packet on the network
+<br>
+## 2-step
+After the installion of snort is complete we can define the source ip and port , the destination port on which snort monitors but in our case we want it to mmonitor the whole network <br>
+For the configuration of source and destination ip of a network we can modify the snort.confi file <br>
+This file can be found in the
+**/etc/snort/snort.conf** 
+path<br>
+## 3-Step
+For writing the rules on which bases the snort will alert us can be written found in the 
+<br> **/etc/snort/rules/local.rules**.<br>
 
-Every screenshot should have some text explaining what the screenshot is about.
+Using the following command we can use nano to open this file and write our rules.<br>
+``
+ sudo nano /etc/snort/rules/local.rules
+``<br>
+*Ref 1: local rules config*
 
-Example below.
-
-*Ref 1: Network Diagram*
+![Ubuntu 64-bit-2024-09-17-22-22-34](https://github.com/user-attachments/assets/989d64ed-f895-454c-b80a-c739cb3b4bfc)
+<br>
+In this we have written the rules to alert us if any tcp traffic and icmp traffic is found.<br>
+with the syntax <br>
+``
+alert tcp any any ->  any any (msg:"icmp ping detected"; sid:302911; rev:1;)
+``<br>
+``
+alert icmp  any any -> any any (msg:"ftp ping  detected"; sid:402020; rev:1;)
+``<br>
+> [!CAUTION]
+> Here the sid of each alert must be unique and should not be the same as another .
