@@ -1,7 +1,8 @@
-# PROJECTNAME
+# SPLUNK-FORWARDER IMPLEMENTATION
 
 ## Objective
 In this setup, an Ubuntu virtual machine is running on a Windows host, with Snort configured as an Intrusion Detection System (IDS) to monitor TCP and ICMP network traffic. The goal is to detect suspicious activities and generate alerts. These alerts are forwarded to Splunk Enterprise using splunk forwarder for centralized alert collection and analysis.
+As in the previous project done in configuring Snort <a href="https://github.com/aounali720/snort-project/blob/main/README.md">Project Snort </a>
 
 ### Skills Learned
 - Splunk Universal Forwarder Installation:
