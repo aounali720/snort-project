@@ -80,4 +80,18 @@ alert tcp any any ->  any any (msg:"icmp ping detected"; sid:302911; rev:1;)
 alert icmp  any any -> any any (msg:"ftp ping  detected"; sid:402020; rev:1;)
 ``<br>
 > [!CAUTION]
-> Here the sid of each alert must be unique and should not be the same as another .
+> Here the sid of each alert must be unique and should not be the same as another.
+<br>
+After saving the file we are going to check the configuration for any error .<br>
+To find network interface that will be used we can use this command in the terminal.<br>
+ ``ifconfig``
+<br>
+ Using the next command we can check if our rules are configured properly for the snort.<br>
+ ``sudo snort -T -i ens33 -c /etc/snort/snort.conf ``
+*Ref 1: Snort testing*
+![Ubuntu 64-bit-2024-09-17-23-00-18](https://github.com/user-attachments/assets/a206e2c3-c79d-468c-af5d-ce0edbbe2e16)
+<br>
+- -T is for snort to run in test mode.
+- -i is for the interface on which snort will monitor packet (Lan card) .
+- -c is for the configuration file used
+<br>
