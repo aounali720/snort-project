@@ -117,6 +117,18 @@ Logged packets are saved in the /var/log/snort also <br>
 ![Ubuntu 64-bit-2024-09-17-23-49-03](https://github.com/user-attachments/assets/b07828f8-fac8-4e06-9427-d1fc56902dfe)
 
 
+# Conclusion
+- The Detection Lab project provided valuable hands-on experience in setting up and configuring Snort as an Intrusion Detection System (IDS) and integrating it with Splunk Enterprise for centralized log monitoring and analysis. By focusing on detecting TCP and ICMP traffic, we were able to generate real-time alerts, simulating network threats within a controlled environment.
+
+- Throughout the project, we gained practical skills in network traffic analysis, SIEM integration, and Linux system administration. We learned how to monitor suspicious activities using custom Snort rules, forward alerts to a SIEM system using Splunk Universal Forwarder, and analyze network threats in a centralized platform. These skills are crucial for understanding and mitigating network security threats, recognizing attack patterns, and utilizing effective defense strategies in a real-world environment.
+
+- By successfully implementing Snort and forwarding alerts to Splunk, this project highlighted the importance of using open-source tools for network security, detection, and response, while also emphasizing the role of centralized log management in cybersecurity operations.
+
+
+
+
+
+
 
 
 
