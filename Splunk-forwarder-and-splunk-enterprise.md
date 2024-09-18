@@ -147,7 +147,7 @@ Now we can install a plugin to visualize the alerts in a more user friendly mann
 On the dashboard under the apps tab click on the find an app.<br>
 Now Search for any app that is more userfriendly in our case we are going to use the " Snort alert for splunk ".<br>
 
-*Ref 7: Snort aler app for splunk*
+*Ref 7: Snort alert app for splunk*
 <br>
 ![snort alertapp localhost](https://github.com/user-attachments/assets/4a6dc2bd-5ba2-44e4-9ee6-17bc063576bb)
 <br>
@@ -158,7 +158,7 @@ Here you will see the snort alert for splunk app under the app list on the left 
 
 *Ref 8: Snort alert app for splunk on dashboard*
 <br>
-![snort alertapp localhost](https://github.com/user-attachments/assets/95b31bdb-a79a-4cc1-907c-3f7908c0ba9c)
+![Screenshot 2024-09-19 005823](https://github.com/user-attachments/assets/9699cd71-5b71-4e2a-99eb-ce89ac8bb48a)
 <br>
 Click on the app.<br>
 As we can see now the alert from snort are presented in a more user friendly way.<br>
@@ -173,6 +173,7 @@ As we can see now the alert from snort are presented in a more user friendly way
 - In this project, we successfully set up a robust intrusion detection and log forwarding system. By installing and configuring Snort as an Intrusion Detection System (IDS) on an Ubuntu virtual machine running on a Windows host, we were able to monitor network traffic, particularly TCP and ICMP, and generate real-time alerts. These alerts were then forwarded to Splunk Enterprise using the Splunk Universal Forwarder for centralized log aggregation and analysis.
 
 - Throughout the process, several key skills were acquired, including the installation and configuration of Splunk Universal Forwarder, Snort, and Splunk Enterprise, as well as proficiency in forwarding logs from the Snort IDS to Splunk for further analysis. The ability to manage logs, monitor network traffic, and respond to alerts using a SIEM system like Splunk is an invaluable skill in cybersecurity.
+
 
 - Furthermore, we enhanced the visualization of Snort alerts in Splunk by installing the Snort Alert for Splunk app, making it easier to monitor and analyze the IDS alerts. This process not only deepened understanding of network security and monitoring but also provided practical experience with the integration of security tools in a virtualized environment.
 
