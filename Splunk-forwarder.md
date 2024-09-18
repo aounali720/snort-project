@@ -167,3 +167,13 @@ As we can see now the alert from snort are presented in a more user friendly way
 <br>
 
 ![Screenshot_16-9-2024_232339_127 0 0 1](https://github.com/user-attachments/assets/2a3f8655-865a-478e-99a2-8d4c468ebe04)
+<br><br>
+
+# Conclusion:
+- In this project, we successfully set up a robust intrusion detection and log forwarding system. By installing and configuring Snort as an Intrusion Detection System (IDS) on an Ubuntu virtual machine running on a Windows host, we were able to monitor network traffic, particularly TCP and ICMP, and generate real-time alerts. These alerts were then forwarded to Splunk Enterprise using the Splunk Universal Forwarder for centralized log aggregation and analysis.
+
+- Throughout the process, several key skills were acquired, including the installation and configuration of Splunk Universal Forwarder, Snort, and Splunk Enterprise, as well as proficiency in forwarding logs from the Snort IDS to Splunk for further analysis. The ability to manage logs, monitor network traffic, and respond to alerts using a SIEM system like Splunk is an invaluable skill in cybersecurity.
+
+- Furthermore, we enhanced the visualization of Snort alerts in Splunk by installing the Snort Alert for Splunk app, making it easier to monitor and analyze the IDS alerts. This process not only deepened understanding of network security and monitoring but also provided practical experience with the integration of security tools in a virtualized environment.
+
+- The result is a functional system capable of detecting and analyzing network intrusions, providing both visibility and insight into potential threats, with logs and alerts efficiently managed in a centralized Splunk Enterprise dashboard.
