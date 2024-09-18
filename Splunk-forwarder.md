@@ -119,7 +119,7 @@ Restart splunk using the following command in the bin directory:<br>
 ``./splunk restart``<br>
 This will apply the configuration that we have done.<br>
 
-#7-step
+#7-step:
 We need to install splunk enterprise where the data is going to be recieved.<br>
 Go to the splunk website and downnload the software .<br>
 with this complete the initial steps in the installation of the splunk enterprise software on the host machine.<br>
@@ -141,3 +141,29 @@ Here we can see that splunk-forwarder sent the snort alerts to splunk-enterprise
 *Ref 6: source-splunk*
 
 ![Screenshot 2024-09-16 225818](https://github.com/user-attachments/assets/d134304e-25a0-4c99-a4ee-a36252552245)
+
+# 8-step:
+Now we can install a plugin to visualize the alerts in a more user friendly manner.<br>
+On the dashboard under the apps tab click on the find an app.<br>
+Now Search for any app that is more userfriendly in our case we are going to use the " Snort alert for splunk ".<br>
+
+*Ref 7: Snort aler app for splunk*
+<br>
+![snort alertapp localhost](https://github.com/user-attachments/assets/4a6dc2bd-5ba2-44e4-9ee6-17bc063576bb)
+<br>
+Now install the app.Splunk will ask for the user name and password<br>
+After completeting the installation <br>
+Go to the dashboard of splunk<br>
+Here you will see the snort alert for splunk app under the app list on the left corner.<br>
+
+*Ref 8: Snort alert app for splunk on dashboard*
+<br>
+![snort alertapp localhost](https://github.com/user-attachments/assets/95b31bdb-a79a-4cc1-907c-3f7908c0ba9c)
+<br>
+Click on the app.<br>
+As we can see now the alert from snort are presented in a more user friendly way.<br>
+
+*Ref 9: Snort alert app dashboard*
+<br>
+
+![Screenshot_16-9-2024_232339_127 0 0 1](https://github.com/user-attachments/assets/2a3f8655-865a-478e-99a2-8d4c468ebe04)
