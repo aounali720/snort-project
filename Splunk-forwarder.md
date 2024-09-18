@@ -115,6 +115,9 @@ Adding:<br>
 ``sourcetype=snort_aler_full``<br>
 ``source=snort``<br>
 After adding these configuration in the input.conf file save it .<br>
+Restart splunk using the following command in the bin directory:<br>
+``./splunk restart``<br>
+This will apply the configuration that we have done.<br>
 
 
 
