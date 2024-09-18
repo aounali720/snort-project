@@ -119,5 +119,25 @@ Restart splunk using the following command in the bin directory:<br>
 ``./splunk restart``<br>
 This will apply the configuration that we have done.<br>
 
+#7-step
+We need to install splunk enterprise where the data is going to be recieved.<br>
+Go to the splunk website and downnload the software .<br>
+with this complete the initial steps in the installation of the splunk enterprise software on the host machine.<br>
+After the installtion is done open splunk enterprise .It will open in the web-browser on the localhost.<br>
+Use the login credentials created while installing splunk enterprise .<br>
+After logging in go to setting .
+under the data list select the receiving and forwarding option to receive the alerts on the 9997 port that was configured on the splunkforwarder.<br>
 
+*Ref 5: snort-enterprise receiving port*
 
+![local host enterprise port](https://github.com/user-attachments/assets/7d7b91c7-45ad-4800-abc5-ed820b5128cf)
+After opening the port go to the dashboard and click on "searching an reporting" on the left apps list.<br>
+*Ref 6: searching and reporting *
+![local host enterprise port](https://github.com/user-attachments/assets/261a1886-0324-4f27-92b2-9e580abb1aee)
+<br>
+Now click on the datasummary and go to the sourse tab <br>
+Here we can see that splunk-forwarder sent the snort alerts to splunk-enterprise.<br>
+
+*Ref 6: source-splunk*
+
+![Screenshot 2024-09-16 225818](https://github.com/user-attachments/assets/d134304e-25a0-4c99-a4ee-a36252552245)
