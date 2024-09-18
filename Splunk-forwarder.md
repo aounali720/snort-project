@@ -46,11 +46,26 @@ Understanding how to specify log sources and directories to monitor (e.g., Snort
   - Used for installing, configuring, and managing Snort, Splunk Universal Forwarder, and Ubuntu services. Key in executing setup and monitoring commands.
 
 
-## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
+## 1-Step:
+Download the splunk Forwarder package from splunk website as to specfic machine .<br>
+In our case we are going to use the debian package as snort was configured on ubuntu virtual machine.<br>
+After downnloading the specific package we are moving it to the /opt directory.With the following command .<br>
+``sudo mv /Downloads/splunkforwarder-9.3.1-0b8d769cb912-linux-2.6-amd64.deb /opt``<br>
+with the package is now moved to the opt directory where all the optional software are stored.<br>
+To install the package we are going to use the following command.<br>
+``sudo apt install ./splunkforwarder-9.3.1-0b8d769cb912-linux-2.6-amd64.deb ``<br>
+*Ref 1: intallation*
+![Ubuntu 64-bit-2024-09-18-16-34-23](https://github.com/user-attachments/assets/2430620e-8fcb-41f1-8eb6-2fcf12f1b7ca)<br>
 
-Every screenshot should have some text explaining what the screenshot is about.
+### 2-step:
+After the installation is complete we need to run splunk to get the initial credentials.<br>
+we need to navigate into the splunk-forwarder/bin directory using the following command.<br>
+``cd /splunkforwarder/bin``<br>
+In this directory we need to run splunk using the command :<br>
+``sudo ./splunk start --accept-license``<br>
+with the --accept-license parameter the terms are accepted .<br>
+Provide splunk with the username and password that will be used to login into splunkforwarder.<br>
+*Ref 2: username and password*
+![Ubuntu 64-bit-2024-09-16-17-46-43](https://github.com/user-attachments/assets/df8f4e3c-7793-4a3a-a992-4945b4217920)
+<br>
 
-Example below.
-
-*Ref 1: Network Diagram*
