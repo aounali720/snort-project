@@ -68,4 +68,19 @@ Provide splunk with the username and password that will be used to login into sp
 *Ref 2: username and password*
 ![Ubuntu 64-bit-2024-09-16-17-46-43](https://github.com/user-attachments/assets/df8f4e3c-7793-4a3a-a992-4945b4217920)
 <br>
+#### 3-step:
+After enteriing the username and password.<br>
+We need to configure snortforward  and add the forward server where the snort logs and alert will be sent.<br>
+In our case the splunk-enterprise is installed on the host machine running windows.<br>
+The ip of the host machine where splunk-forwarder will send the logs can be found using the cmd command.<br>
+``ipconfig``<br>
+We need the ipv4 address to send logs.<br>
+After obtaining the ip address we need to add the forwarding address in splunk-forwarder using the command :<br>
+`` sudo ./splunk add forward-server "ip-address":9997``<br>
+After the ip-address the specific port 9997 that is a reserved port <br>
+splunk-forwarder will ask for the username and password that was created in the initial start up of splunk.<br>
+with the following command we can check the list of forward server:<br>
+``sudo ./splunk list forward-server``<br>
+
+
 
