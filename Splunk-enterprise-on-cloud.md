@@ -107,6 +107,18 @@ Login with the username and password created in the initial installation of splu
 ## Step-4
 Here we now need to configure the recieving data port where the splunk-forwarder will forward the alert<br>
 by opening a port at 9997 :<br>
-*Ref 4: splunk-portforward-*
+*Ref 5: splunk-portforward-*
 ![Screenshot 2024-09-18 195207](https://github.com/user-attachments/assets/e4cbce8d-5c01-4390-86e0-c9b116e43a85)
+## Step-5
+As now we can configure Splunk forwarder on our ubuntu virtual machine to send the alerts the cloud-splunk.<br>
+In the ubunut machine we need to add the forwarder server with the command :<br>
+`` ./splunk add forward-server "ipaddres":9997``<br>
+Port 9997 is used by default <br>
+To check the list of the server in splunk-Forwarder us the command :<br>
+`` ./splunk list forward-server``<br>
 
+*Ref 6: splunk-list-*
+![list server on cloud](https://github.com/user-attachments/assets/7a692f52-d03e-415c-a908-7869aa98ef7e)
+Reboot with the command:<br>
+``./splunk restart``
+After this we go into Splunk-enterprise dashboard<br>
