@@ -122,3 +122,9 @@ To check the list of the server in splunk-Forwarder us the command :<br>
 Reboot with the command:<br>
 ``./splunk restart``
 After this we go into Splunk-enterprise dashboard<br>
+## Step-6:
+In the splunk cloud dashboard we go to SEARCHING AND REPORTING on the left side <br>
+In the data summary we can see the machine <br>
+*Ref 7: splunk-data-*
+
+
