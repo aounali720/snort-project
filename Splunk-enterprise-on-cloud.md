@@ -128,3 +128,9 @@ In the data summary we can see the machine <br>
 *Ref 7: splunk-data-*
 
 
+![source data on cloud](https://github.com/user-attachments/assets/aab3fd8d-d542-4686-8de0-ef251028f81e)
+For more Friendly layout we are going to use the Snort alert for splunk app that can be downloaded.<br>
+This will now give us a better layout of the data that is being recieved in splunk.<br>
+*Ref 7: splunk-snort-alert-*
+![snort alert cloud dashboard](https://github.com/user-attachments/assets/94f91093-4fa3-47ae-b304-373ea8a8e5a7)
+
