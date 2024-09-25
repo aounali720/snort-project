@@ -133,4 +133,8 @@ For more Friendly layout we are going to use the Snort alert for splunk app that
 This will now give us a better layout of the data that is being recieved in splunk.<br>
 *Ref 7: splunk-snort-alert-*
 ![snort alert cloud dashboard](https://github.com/user-attachments/assets/94f91093-4fa3-47ae-b304-373ea8a8e5a7)
+<br>
+<br>
+## Conclusion:
+By following these steps,we have successfully installed Splunk Enterprise on our Ubuntu cloud instance. Splunk is now ready to collect, index, and analyze snort data, giving us valuable insights through its web interface. Remember to secure your Splunk instance, monitor resource usage, and explore additional features such as data ingestion, alerting, and dashboard creation to fully leverage the power of Splunk for your organization's needs.
 
